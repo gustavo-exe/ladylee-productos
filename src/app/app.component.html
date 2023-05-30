@@ -8,12 +8,14 @@
 
   </div>
 
-  <ng-container  *ngFor="let item of products" >
+  <div  class="grid" >
+    <ng-container  *ngFor="let item of products" >
 
-    <app-card
-    [titulo]="item.title"
-    [precio]="item.price"
-    ></app-card>
-  </ng-container>
+      <app-card
+      [titulo]="item.title"
+      [precio]="item.price"
+      ></app-card>
+    </ng-container>
+  </div>
 
 </div>
